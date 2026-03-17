@@ -1467,7 +1467,7 @@ button {
   .hero-actions { justify-content: center; }
   .hero-stats   { justify-content: center; }
   .hero-subtitle { margin: 0 auto 2.5rem; }
-  .hero-image-wrapper { order: -1; }
+  .hero-image-wrapper { order: 2; }
   .hero-mate-svg { width: min(300px, 80vw); }
 
   .nosotros-container {
@@ -1504,6 +1504,10 @@ button {
 
 @media (max-width: 600px) {
   .navbar-links { display: none; }
+  .navbar {
+    grid-template-columns: 1fr auto;
+  }
+  .navbar-cart { justify-self: end; }
 
   .catalog-grid {
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
